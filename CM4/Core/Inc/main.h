@@ -57,10 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SIM_CoderCH1_Pin GPIO_PIN_8
-#define SIM_CoderCH1_GPIO_Port GPIOB
-#define SIM_CoderCH2_Pin GPIO_PIN_9
-#define SIM_CoderCH2_GPIO_Port GPIOB
+#define UART5_RX_UNUSED_Pin GPIO_PIN_12
+#define UART5_RX_UNUSED_GPIO_Port GPIOB
+#define LED_RGB_WS2812_Pin GPIO_PIN_12
+#define LED_RGB_WS2812_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 

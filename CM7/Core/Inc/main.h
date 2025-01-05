@@ -99,6 +99,10 @@ void Error_Handler(void);
 #define Servo7_PWM_GPIO_Port GPIOF
 #define Eana6_Pin GPIO_PIN_0
 #define Eana6_GPIO_Port GPIOC
+#define Etor1_Pin GPIO_PIN_2
+#define Etor1_GPIO_Port GPIOC
+#define Etor2_Pin GPIO_PIN_3
+#define Etor2_GPIO_Port GPIOC
 #define Eana1_Pin GPIO_PIN_0
 #define Eana1_GPIO_Port GPIOA
 #define Eana2_Pin GPIO_PIN_3
@@ -113,10 +117,18 @@ void Error_Handler(void);
 #define Eana5_GPIO_Port GPIOB
 #define SPI_MOSI_Pin GPIO_PIN_2
 #define SPI_MOSI_GPIO_Port GPIOB
+#define LED4_Pin GPIO_PIN_7
+#define LED4_GPIO_Port GPIOE
+#define LED5_Pin GPIO_PIN_8
+#define LED5_GPIO_Port GPIOE
 #define Coder1_1_Pin GPIO_PIN_9
 #define Coder1_1_GPIO_Port GPIOE
 #define Coder1_2_Pin GPIO_PIN_11
 #define Coder1_2_GPIO_Port GPIOE
+#define LED6_Pin GPIO_PIN_12
+#define LED6_GPIO_Port GPIOE
+#define LED7_Pin GPIO_PIN_15
+#define LED7_GPIO_Port GPIOE
 #define Servo3_PWM_Pin GPIO_PIN_10
 #define Servo3_PWM_GPIO_Port GPIOB
 #define Servo4_PWM_Pin GPIO_PIN_11
@@ -171,6 +183,10 @@ void Error_Handler(void);
 #define I2C_SCL_GPIO_Port GPIOB
 #define I2C_SDA_Pin GPIO_PIN_7
 #define I2C_SDA_GPIO_Port GPIOB
+#define Etor3_Pin GPIO_PIN_8
+#define Etor3_GPIO_Port GPIOB
+#define Etor4_Pin GPIO_PIN_9
+#define Etor4_GPIO_Port GPIOB
 #define LED2_Pin GPIO_PIN_1
 #define LED2_GPIO_Port GPIOE
 
