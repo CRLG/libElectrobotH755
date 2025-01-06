@@ -1297,17 +1297,32 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOG_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin
-                          |LED2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, Mot1_Sens1_Pin|Mot2_Sens1_Pin|Mot1_Sens2_Pin|LED4_Pin
+                          |LED5_Pin|LED6_Pin|Mot3_Sens2_Pin|Mot3_Sens1_Pin
+                          |LED7_Pin|LED2_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOF, Mot4_Sens1_Pin|Mot4_Sens2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(USB_OTG_FS_PWR_EN_GPIO_Port, USB_OTG_FS_PWR_EN_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, USB_OTG_FS_PWR_EN_Pin|Mot2_Sens2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, SPI_CS1_Pin|SPI_CS2_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : Mot1_Sens1_Pin Mot2_Sens1_Pin Mot1_Sens2_Pin LED4_Pin
+                           LED5_Pin LED6_Pin Mot3_Sens2_Pin Mot3_Sens1_Pin
+                           LED7_Pin LED2_Pin */
+  GPIO_InitStruct.Pin = Mot1_Sens1_Pin|Mot2_Sens1_Pin|Mot1_Sens2_Pin|LED4_Pin
+                          |LED5_Pin|LED6_Pin|Mot3_Sens2_Pin|Mot3_Sens1_Pin
+                          |LED7_Pin|LED2_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Etor1_Pin Etor2_Pin */
   GPIO_InitStruct.Pin = Etor1_Pin|Etor2_Pin;
@@ -1315,14 +1330,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : LED4_Pin LED5_Pin LED6_Pin LED7_Pin
-                           LED2_Pin */
-  GPIO_InitStruct.Pin = LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin
-                          |LED2_Pin;
+  /*Configure GPIO pins : Mot4_Sens1_Pin Mot4_Sens2_Pin */
+  GPIO_InitStruct.Pin = Mot4_Sens1_Pin|Mot4_Sens2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LED3_Pin */
   GPIO_InitStruct.Pin = LED3_Pin;
@@ -1331,12 +1344,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LED3_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : USB_OTG_FS_PWR_EN_Pin */
-  GPIO_InitStruct.Pin = USB_OTG_FS_PWR_EN_Pin;
+  /*Configure GPIO pins : USB_OTG_FS_PWR_EN_Pin Mot2_Sens2_Pin */
+  GPIO_InitStruct.Pin = USB_OTG_FS_PWR_EN_Pin|Mot2_Sens2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(USB_OTG_FS_PWR_EN_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
   /*Configure GPIO pins : SPI_CS1_Pin SPI_CS2_Pin */
   GPIO_InitStruct.Pin = SPI_CS1_Pin|SPI_CS2_Pin;

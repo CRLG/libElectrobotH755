@@ -85,6 +85,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Mot1_Sens1_Pin GPIO_PIN_2
+#define Mot1_Sens1_GPIO_Port GPIOE
+#define Mot2_Sens1_Pin GPIO_PIN_3
+#define Mot2_Sens1_GPIO_Port GPIOE
+#define Mot1_Sens2_Pin GPIO_PIN_4
+#define Mot1_Sens2_GPIO_Port GPIOE
 #define Mot1_PWM_Pin GPIO_PIN_5
 #define Mot1_PWM_GPIO_Port GPIOE
 #define Mot2_PWM_Pin GPIO_PIN_6
@@ -117,6 +123,10 @@ void Error_Handler(void);
 #define Eana5_GPIO_Port GPIOB
 #define SPI_MOSI_Pin GPIO_PIN_2
 #define SPI_MOSI_GPIO_Port GPIOB
+#define Mot4_Sens1_Pin GPIO_PIN_14
+#define Mot4_Sens1_GPIO_Port GPIOF
+#define Mot4_Sens2_Pin GPIO_PIN_15
+#define Mot4_Sens2_GPIO_Port GPIOF
 #define LED4_Pin GPIO_PIN_7
 #define LED4_GPIO_Port GPIOE
 #define LED5_Pin GPIO_PIN_8
@@ -127,6 +137,10 @@ void Error_Handler(void);
 #define Coder1_2_GPIO_Port GPIOE
 #define LED6_Pin GPIO_PIN_12
 #define LED6_GPIO_Port GPIOE
+#define Mot3_Sens2_Pin GPIO_PIN_13
+#define Mot3_Sens2_GPIO_Port GPIOE
+#define Mot3_Sens1_Pin GPIO_PIN_14
+#define Mot3_Sens1_GPIO_Port GPIOE
 #define LED7_Pin GPIO_PIN_15
 #define LED7_GPIO_Port GPIOE
 #define Servo3_PWM_Pin GPIO_PIN_10
@@ -143,6 +157,8 @@ void Error_Handler(void);
 #define STLINK_TX_GPIO_Port GPIOD
 #define USB_OTG_FS_PWR_EN_Pin GPIO_PIN_10
 #define USB_OTG_FS_PWR_EN_GPIO_Port GPIOD
+#define Mot2_Sens2_Pin GPIO_PIN_11
+#define Mot2_Sens2_GPIO_Port GPIOD
 #define Coder3_1_Pin GPIO_PIN_12
 #define Coder3_1_GPIO_Port GPIOD
 #define Coder3_2_Pin GPIO_PIN_13
