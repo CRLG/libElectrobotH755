@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2024 STMicroelectronics.
+  * Copyright (c) 2025 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -110,8 +110,8 @@ static void MX_TIM14_Init(void);
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
-  uint32_t cpt_20msec=0;
 
   /* USER CODE END 1 */
 /* USER CODE BEGIN Boot_Mode_Sequence_0 */
@@ -188,53 +188,8 @@ Error_Handler();
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  uint16_t dcy15_1=0, dcy15_2 = 0;
-  uint16_t dcy_3=0, dcy_4 = 0;
-
   while (1)
   {
-	  if (tick) {
-		  tick = 0;
-		  cpt_20msec++;
-		  if (cpt_20msec>=20) {
-			  cpt_20msec = 0;
-			  HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
-			  HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
-
-
-			  uint32_t period = 3840000;
-			  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, period*0.1);
-			  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, period*0.25);
-			  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, period*0.75);
-			  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, period*0.99);
-
-			  period = 64000;
-			  __HAL_TIM_SET_COMPARE(&htim12, TIM_CHANNEL_2, period*0.2);
-			  __HAL_TIM_SET_COMPARE(&htim13, TIM_CHANNEL_1, period*0.4);
-			  __HAL_TIM_SET_COMPARE(&htim14, TIM_CHANNEL_1, period*0.6);
-
-
-			  // sorties PWM moteur
-			  uint32_t period_20k = 9600;
-			  if (dcy15_1 < period_20k) dcy15_1+= 1000;
-			  else dcy15_1 = 0;
-			  if (dcy15_1 > period_20k) dcy15_1 = period_20k;
-
-			  if (dcy15_2 < period_20k) dcy15_2+= 200;
-			  else dcy15_2 = 0;
-			  if (dcy15_2 > period_20k) dcy15_2 = period_20k;
-
-			  dcy_3 = period_20k * 0.47;
-			  dcy_4 = period_20k * 0.86;
-
-			  __HAL_TIM_SET_COMPARE(&htim15, TIM_CHANNEL_1, dcy15_1);
-			  __HAL_TIM_SET_COMPARE(&htim15, TIM_CHANNEL_2, dcy15_2);
-			  __HAL_TIM_SET_COMPARE(&htim16, TIM_CHANNEL_1, dcy_3);
-			  __HAL_TIM_SET_COMPARE(&htim17, TIM_CHANNEL_1, dcy_4);
-
-
-		  }
-	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -336,6 +291,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.Overrun = ADC_OVR_DATA_PRESERVED;
   hadc1.Init.LeftBitShift = ADC_LEFTBITSHIFT_NONE;
   hadc1.Init.OversamplingMode = DISABLE;
+  hadc1.Init.Oversampling.Ratio = 1;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
@@ -391,8 +347,8 @@ static void MX_FDCAN1_Init(void)
   hfdcan1.Init.ProtocolException = DISABLE;
   hfdcan1.Init.NominalPrescaler = 16;
   hfdcan1.Init.NominalSyncJumpWidth = 1;
-  hfdcan1.Init.NominalTimeSeg1 = 2;
-  hfdcan1.Init.NominalTimeSeg2 = 2;
+  hfdcan1.Init.NominalTimeSeg1 = 1;
+  hfdcan1.Init.NominalTimeSeg2 = 1;
   hfdcan1.Init.DataPrescaler = 1;
   hfdcan1.Init.DataSyncJumpWidth = 1;
   hfdcan1.Init.DataTimeSeg1 = 1;
@@ -1324,11 +1280,35 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : PC1 PC4 PC5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_4|GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
   /*Configure GPIO pins : Etor1_Pin Etor2_Pin */
   GPIO_InitStruct.Pin = Etor1_Pin|Etor2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PA1 PA2 PA7 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_7;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PB0 PB13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Mot4_Sens1_Pin Mot4_Sens2_Pin */
   GPIO_InitStruct.Pin = Mot4_Sens1_Pin|Mot4_Sens2_Pin;
@@ -1357,6 +1337,22 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PA8 PA11 PA12 */
+  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_11|GPIO_PIN_12;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF10_OTG1_FS;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PG11 PG13 */
+  GPIO_InitStruct.Pin = GPIO_PIN_11|GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  GPIO_InitStruct.Alternate = GPIO_AF11_ETH;
+  HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Etor3_Pin Etor4_Pin */
   GPIO_InitStruct.Pin = Etor3_Pin|Etor4_Pin;
