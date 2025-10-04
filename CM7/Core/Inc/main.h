@@ -58,6 +58,7 @@ extern TIM_HandleTypeDef htim17;
 
 extern UART_HandleTypeDef huart2;
 extern UART_HandleTypeDef huart3;
+extern UART_HandleTypeDef huart5;
 extern UART_HandleTypeDef huart6;
 extern DMA_HandleTypeDef hdma_usart3_tx;
 
@@ -147,6 +148,8 @@ void Error_Handler(void);
 #define Servo5_PWM_GPIO_Port GPIOB
 #define Servo4_PWM_Pin GPIO_PIN_11
 #define Servo4_PWM_GPIO_Port GPIOB
+#define UART5_RX_UNUSED_Pin GPIO_PIN_12
+#define UART5_RX_UNUSED_GPIO_Port GPIOB
 #define LED3_Pin GPIO_PIN_14
 #define LED3_GPIO_Port GPIOB
 #define Servo1_PWM_Pin GPIO_PIN_15
@@ -175,6 +178,8 @@ void Error_Handler(void);
 #define SPI_SCK_GPIO_Port GPIOC
 #define SPI_MISO_Pin GPIO_PIN_11
 #define SPI_MISO_GPIO_Port GPIOC
+#define LED_RGB_WS2812_Pin GPIO_PIN_12
+#define LED_RGB_WS2812_GPIO_Port GPIOC
 #define CAN_RX_Pin GPIO_PIN_0
 #define CAN_RX_GPIO_Port GPIOD
 #define CAN_TX_Pin GPIO_PIN_1
