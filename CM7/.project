@@ -376,6 +376,11 @@
 			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/main_app.cpp</locationURI>
 		</link>
 		<link>
+			<name>Sources/vl53l0xMulti.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/vl53l0xMulti.cpp</locationURI>
+		</link>
+		<link>
 			<name>Sources/ws2812b.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/ws2812b.cpp</locationURI>
