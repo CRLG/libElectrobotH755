@@ -75,6 +75,8 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/Servomoteurs"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/ServosAX"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.562378022" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -106,6 +108,8 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/Servomoteurs"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/ServosAX"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols.1081592217" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CORE_CM7"/>
@@ -144,6 +148,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Common"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CppRobLib"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CppRobLibSTM32"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Modelia"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
@@ -287,6 +292,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Common"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CppRobLib"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="CppRobLibSTM32"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Modelia"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Sources"/>
