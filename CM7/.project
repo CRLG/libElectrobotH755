@@ -156,6 +156,16 @@
 			<locationURI>PARENT-3-PROJECT_LOC/CM7/Modelia/sm_autotest.h</locationURI>
 		</link>
 		<link>
+			<name>Modelia/sm_blockly_debutant.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CM7/Modelia/sm_blockly_debutant.cpp</locationURI>
+		</link>
+		<link>
+			<name>Modelia/sm_blockly_debutant.h</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CM7/Modelia/sm_blockly_debutant.h</locationURI>
+		</link>
+		<link>
 			<name>Modelia/sm_chasseneige.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/CM7/Modelia/sm_chasseneige.cpp</locationURI>
@@ -341,9 +351,14 @@
 			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/CServomoteurs.cpp</locationURI>
 		</link>
 		<link>
-			<name>Sources/CTelemetres.cpp</name>
+			<name>Sources/CTelemetres_US_SRF08.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/CTelemetres.cpp</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/CTelemetres_US_SRF08.cpp</locationURI>
+		</link>
+		<link>
+			<name>Sources/CTelemetres_VL53.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/CTelemetres_VL53.cpp</locationURI>
 		</link>
 		<link>
 			<name>Sources/CTrameLaBotBox.cpp</name>

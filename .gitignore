@@ -33,6 +33,7 @@
 
 # Directory
 Debug/
+Release/
 
 *.launch
 mx.scratch
