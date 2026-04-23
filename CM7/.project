@@ -116,6 +116,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/CppRobLibSTM32/LICENSE</locationURI>
 		</link>
 		<link>
+			<name>CppRobLibSTM32/Lidar</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>CppRobLibSTM32/README.md</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CppRobLibSTM32/README.md</locationURI>
@@ -436,6 +441,26 @@
 			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/Lidar_utils.h</locationURI>
 		</link>
 		<link>
+			<name>CppRobLib/Lidar/lidar_data.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/lidar_data.cpp</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/Lidar/lidar_data.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/lidar_data.h</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/Lidar/ydlidar_tminiplus_base.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/ydlidar_tminiplus_base.cpp</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/Lidar/ydlidar_tminiplus_base.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/ydlidar_tminiplus_base.h</locationURI>
+		</link>
+		<link>
 			<name>CppRobLib/PowerElectrobot/dspicpowerelectrobotbase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/PowerElectrobot/dspicpowerelectrobotbase.cpp</locationURI>
@@ -629,6 +654,16 @@
 			<name>CppRobLib/common-rob/Modelia</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>CppRobLibSTM32/Lidar/ydlidar_tminiplus_stm32.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLibSTM32/Lidar/ydlidar_tminiplus_stm32.cpp</locationURI>
+		</link>
+		<link>
+			<name>CppRobLibSTM32/Lidar/ydlidar_tminiplus_stm32.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLibSTM32/Lidar/ydlidar_tminiplus_stm32.h</locationURI>
 		</link>
 		<link>
 			<name>CppRobLibSTM32/VL53L0x/vl53l0x.cpp</name>

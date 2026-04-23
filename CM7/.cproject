@@ -39,6 +39,7 @@
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.1966371932" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
 							</tool>
@@ -79,6 +80,7 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.562378022" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -112,6 +114,7 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols.1081592217" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CORE_CM7"/>
@@ -192,6 +195,7 @@
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.1702047840" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
 							</tool>
@@ -231,6 +235,7 @@
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1277028273" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -264,6 +269,7 @@
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols.2090851597" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CORE_CM7"/>

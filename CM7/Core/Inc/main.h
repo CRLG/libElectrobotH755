@@ -59,6 +59,7 @@ extern UART_HandleTypeDef huart3;
 extern UART_HandleTypeDef huart5;
 extern UART_HandleTypeDef huart6;
 extern DMA_HandleTypeDef hdma_usart3_tx;
+extern DMA_HandleTypeDef hdma_usart6_rx;
 
 extern volatile uint8_t tick;
 
