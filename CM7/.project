@@ -451,6 +451,21 @@
 			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/lidar_data.h</locationURI>
 		</link>
 		<link>
+			<name>CppRobLib/Lidar/lidar_data_filter_base.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/lidar_data_filter_base.h</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/Lidar/lidar_data_filter_tracker.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/lidar_data_filter_tracker.cpp</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/Lidar/lidar_data_filter_tracker.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/lidar_data_filter_tracker.h</locationURI>
+		</link>
+		<link>
 			<name>CppRobLib/Lidar/ydlidar_tminiplus_base.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/Lidar/ydlidar_tminiplus_base.cpp</locationURI>
