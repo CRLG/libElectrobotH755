@@ -39,6 +39,7 @@
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/mongoose-ethernet"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.1966371932" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
@@ -79,6 +80,7 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/ServosAX"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/mongoose-ethernet"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
@@ -113,6 +115,7 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/ServosAX"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/mongoose-ethernet"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
@@ -195,6 +198,7 @@
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/LedWS2812Uart"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/mongoose-ethernet"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/Lidar"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.1702047840" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
@@ -231,6 +235,7 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/Servomoteurs"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/ServosAX"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/mongoose-ethernet"/>
 									<listOptionValue builtIn="false" value="../../../../CM7/Modelia"/>
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>
@@ -265,6 +270,7 @@
 									<listOptionValue builtIn="false" value="../../../CppRobLib/Servomoteurs"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/ServosAX"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLib/VL53L0x"/>
+									<listOptionValue builtIn="false" value="../../../CppRobLib/mongoose-ethernet"/>
 									<listOptionValue builtIn="false" value="../../../../CM7/Modelia"/>
 									<listOptionValue builtIn="false" value="../../../../CM7/Includes"/>
 									<listOptionValue builtIn="false" value="../../../CppRobLibSTM32/VL53L0x"/>

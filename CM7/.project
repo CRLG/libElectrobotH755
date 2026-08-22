@@ -101,6 +101,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>CppRobLib/mongoose-ethernet</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>CppRobLibSTM32/.git</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CppRobLibSTM32/.git</locationURI>
@@ -386,6 +391,11 @@
 			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/main_app.cpp</locationURI>
 		</link>
 		<link>
+			<name>Sources/mongoose_app.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/mongoose_app.cpp</locationURI>
+		</link>
+		<link>
 			<name>Sources/vl53l0xMulti.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-3-PROJECT_LOC/CM7/Sources/vl53l0xMulti.cpp</locationURI>
@@ -669,6 +679,21 @@
 			<name>CppRobLib/common-rob/Modelia</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/mongoose-ethernet/mongoose.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/mongoose-ethernet/mongoose.c</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/mongoose-ethernet/mongoose.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/mongoose-ethernet/mongoose.h</locationURI>
+		</link>
+		<link>
+			<name>CppRobLib/mongoose-ethernet/readme</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CppRobLib/mongoose-ethernet/readme</locationURI>
 		</link>
 		<link>
 			<name>CppRobLibSTM32/Lidar/ydlidar_tminiplus_stm32.cpp</name>
